@@ -1,0 +1,3 @@
+SERVER=example.com:1234
+USERNAME=johndoe
+PASSWORD=correct horse battery staple

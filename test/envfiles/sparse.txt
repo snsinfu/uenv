@@ -1,0 +1,7 @@
+
+# aaa
+BASE_URI=https://api.example.com/v1
+
+# bbb
+API_TOKEN=abcdefghijklmnopqrstuvwxyz
+
