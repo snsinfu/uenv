@@ -3,13 +3,6 @@ uenv
 
 `uenv` executes a command with environment variables loaded from a file.
 
-- [Usage](#usage)
-- [Examples](#examples)
-- [Installation](#installation)
-- [Limitations](#limitations)
-- [Similar utilities](#similar-utilities)
-- [License](#license)
-
 ## Usage
 
     Usage: uenv [-ch] [-f envfile] command ...
@@ -26,9 +19,7 @@ environment variables accordingly, and executes the command.
 The exit code is 111 if any error occured before executing the command.
 Otherwise the exit code is the same as that of the command.
 
-## Examples
-
-### Basic usage
+### Example
 
 Load environment variables from `.env` file and run `vagrant up`:
 
