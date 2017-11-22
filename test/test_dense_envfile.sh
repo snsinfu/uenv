@@ -1,7 +1,7 @@
 #!/bin/sh -efu
 set -efu
 
-. common.sh
+. ./common.sh
 
 expected="example.com:1234"
 actual="$(uenv -cf envfiles/dense.txt sh -uc 'echo "${SERVER}"')"

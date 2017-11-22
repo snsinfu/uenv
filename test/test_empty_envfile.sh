@@ -1,7 +1,7 @@
 #!/bin/sh -efu
 set -efu
 
-. common.sh
+. ./common.sh
 
 expected="PATH=$(getconf PATH)"
 actual="$(uenv -cf envfiles/empty.txt env)"

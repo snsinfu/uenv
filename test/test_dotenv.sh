@@ -1,7 +1,7 @@
 #!/bin/sh -efu
 set -efu
 
-. common.sh
+. ./common.sh
 
 cd dotenv
 

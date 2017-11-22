@@ -1,7 +1,7 @@
 #!/bin/sh -efu
 set -efu
 
-. common.sh
+. ./common.sh
 
 expected="https://api.example.com/v1"
 actual="$(uenv -cf envfiles/sparse.txt sh -uc 'echo "${BASE_URI}"')"
