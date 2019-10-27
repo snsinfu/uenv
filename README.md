@@ -41,15 +41,23 @@ Load environment variables from `.env` file and run `vagrant up`:
 
 ## Installation
 
+### Ubuntu
+
+```
+sudo add-apt-repository ppa:snsinfu/uenv
+sudo apt-get install uenv
+```
+
+### Build
+
 Requirements:
 
 - C99
 - POSIX
 
-Build and install:
+Build and install to `~/bin`:
 
-    make
-    cp uenv ~/bin
+    make install DESTDIR=${HOME}
 
 ## Limitations
 
@@ -66,4 +74,4 @@ Build and install:
 
 ## License
 
-MIT
+MIT.
