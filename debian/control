@@ -1,0 +1,13 @@
+Source: uenv
+Section: misc
+Priority: optional
+Maintainer: snsinfu <snsinfu@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 4.3.0
+Homepage: https://github.com/snsinfu/uenv/
+
+Package: uenv
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Set environment from file
+ uenv sets environment from file and executes a command.

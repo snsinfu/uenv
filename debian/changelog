@@ -1,0 +1,5 @@
+uenv (0.1.0-0ppa1) bionic; urgency=low
+
+  Initial packaging.
+
+ -- snsinfu <snsinfu@gmail.com>  Sun, 27 Oct 2019 07:39:52 +0000

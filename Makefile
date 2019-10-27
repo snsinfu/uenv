@@ -2,7 +2,9 @@ CFLAGS = -std=c99 -Wpedantic -Wall -Wextra -Wconversion -Wshadow -O2
 TARGET = uenv
 OBJECTS = uenv.o
 
-.PHONY: test clean
+DESTDIR ?= /usr/local
+
+.PHONY: test clean install
 
 $(TARGET): $(OBJECTS)
 	$(CC) $(CFLAGS) $(OBJECTS) -o $@ $(LDFLAGS)
@@ -12,3 +14,7 @@ test: $(TARGET)
 
 clean:
 	rm -f $(TARGET) $(OBJECTS)
+
+install: $(TARGET)
+	mkdir -p $(DESTDIR)/bin
+	cp $(TARGET) $(DESTDIR)/bin
